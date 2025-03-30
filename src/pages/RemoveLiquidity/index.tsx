@@ -56,7 +56,7 @@ export default function RemoveLiquidity({
     chainId
   ])
 
-  const theme = useTheme()
+  const theme = useContext(ThemeContext)
 
   // toggle wallet when disconnected
   const toggleWalletModal = useWalletModalToggle()
