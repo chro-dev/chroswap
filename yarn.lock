@@ -2189,6 +2189,19 @@
     "@svgr/plugin-svgo" "^4.3.1"
     loader-utils "^1.2.3"
 
+"@taleyacun/sdk@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@taleyacun/sdk/-/sdk-1.0.1.tgz#ee5d36261b094fcb78de8c14e3b5df65f835ffcd"
+  integrity sha512-YMNhuNXssa1a0TcdxQv/PvRVsQZDwFAJNNFIafc1LOIjOt7UDS85doqHdmU2Bfs83HfaLS0Oks7CJ8mIscUthA==
+  dependencies:
+    "@uniswap/v2-core" "^1.0.0"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.1"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+    toformat "^2.0.0"
+
 "@testing-library/dom@^7.11.0":
   version "7.21.4"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.21.4.tgz#24b045f3161b7c91fdb35da7c001908cdc99b55b"
@@ -2573,7 +2586,6 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@uniswap/lib/-/lib-1.1.1.tgz#0afd29601846c16e5d082866cbb24a9e0758e6bc"
   integrity sha512-2yK7sLpKIT91TiS5sewHtOa7YuM8IuBXVl4GZv2jZFys4D2sY7K5vZh6MqD25TPA95Od+0YzCVq6cTF2IKrOmg==
-
 
 "@uniswap/token-lists@^1.0.0-beta.15":
   version "1.0.0-beta.15"
