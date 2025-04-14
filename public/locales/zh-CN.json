@@ -71,5 +71,7 @@
   "tokenAddress": "通证地址",
   "label": "通证符号",
   "decimals": "小数位数",
-  "enterTokenCont": "输入通证地址并继续"
+  "enterTokenCont": "输入通证地址并继续",
+  "Enter an amount": "输入金额",
+  "tokenSearchPlaceholder": "搜索代币名称或粘贴地址"
 }

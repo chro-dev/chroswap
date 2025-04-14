@@ -91,8 +91,8 @@ export function AddRemoveTabs({ adding }: { adding: boolean }) {
         <QuestionHelper
           text={
             adding
-              ? 'When you add liquidity, you are given pool tokens representing your position. These tokens automatically earn fees proportional to your share of the pool, and can be redeemed at any time.'
-              : 'Removing pool tokens converts your position back into underlying tokens at the current rate, proportional to your share of the pool. Accrued fees are included in the amounts you receive.'
+              ? '当你添加流动性时，你会得到代表你份额的池子代币。这些代币会自动按你在池子中的份额比例赚取费用，并且可以随时赎回。'
+              : '移除池子代币会将你的份额按当前比例转换回基础代币，费用按你在池子中的份额比例计算并包含在你收到的金额中。'
           }
         />
       </RowBetween>

@@ -63,28 +63,28 @@ export default function Pool() {
         <AutoColumn gap="lg" justify="center">
           <ButtonPrimary id="join-pool-button" as={Link} style={{ padding: 16 }} to="/add/ETH">
             <Text fontWeight={500} fontSize={20}>
-              Add Liquidity
+              添加流动性
             </Text>
           </ButtonPrimary>
 
           <AutoColumn gap="12px" style={{ width: '100%' }}>
             <RowBetween padding={'0 8px'}>
               <Text color={theme.text1} fontWeight={500}>
-                Your Liquidity
+                你的LP
               </Text>
-              <Question text="When you add liquidity, you are given pool tokens that represent your share. If you don’t see a pool you joined in this list, try importing a pool below." />
+              <Question text="当你添加流动性时，你会得到代表你份额的池子代币。如果你在这个列表中没有看到你加入的池子，尝试在下面导入一个池子。" />
             </RowBetween>
 
             {!account ? (
               <LightCard padding="40px">
                 <TYPE.body color={theme.text3} textAlign="center">
-                  Connect to a wallet to view your liquidity.
+                  链接钱包查看你的LP.
                 </TYPE.body>
               </LightCard>
             ) : v2IsLoading ? (
               <LightCard padding="40px">
                 <TYPE.body color={theme.text3} textAlign="center">
-                  <Dots>Loading</Dots>
+                  <Dots>加载中</Dots>
                 </TYPE.body>
               </LightCard>
             ) : allV2PairsWithLiquidity?.length > 0 ? (
@@ -96,16 +96,16 @@ export default function Pool() {
             ) : (
               <LightCard padding="40px">
                 <TYPE.body color={theme.text3} textAlign="center">
-                  No liquidity found.
+                  暂未找到LP.
                 </TYPE.body>
               </LightCard>
             )}
 
             <div>
               <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
-                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : "Don't see a pool you joined?"}{' '}
+                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : "没有看到你的LP?"}{' '}
                 <StyledInternalLink id="import-pool-link" to={hasV1Liquidity ? '/migrate/v1' : '/find'}>
-                  {hasV1Liquidity ? 'Migrate now.' : 'Import it.'}
+                  {hasV1Liquidity ? 'Migrate now.' : '导入它.'}
                 </StyledInternalLink>
               </Text>
             </div>

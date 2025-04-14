@@ -160,15 +160,15 @@ export function useDerivedSwapInfo(): {
 
   let inputError: string | undefined
   if (!account) {
-    inputError = 'Connect Wallet'
+    inputError = '连接钱包'
   }
 
   if (!parsedAmount) {
-    inputError = inputError ?? 'Enter an amount'
+    inputError = inputError ?? '输入金额'
   }
 
   if (!currencies[Field.INPUT] || !currencies[Field.OUTPUT]) {
-    inputError = inputError ?? 'Select a token'
+    inputError = inputError ?? '选择一个代币'
   }
 
   const formattedTo = isAddress(to)

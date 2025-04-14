@@ -309,7 +309,7 @@ export default function AccountDetails({
                         ;(connector as any).close()
                       }}
                     >
-                      Disconnect
+                      断开连接
                     </WalletAction>
                   )}
                   <WalletAction
@@ -348,7 +348,7 @@ export default function AccountDetails({
                       <div>
                         {account && (
                           <Copy toCopy={account}>
-                            <span style={{ marginLeft: '4px' }}>Copy Address</span>
+                            <span style={{ marginLeft: '4px' }}>复制地址</span>
                           </Copy>
                         )}
                         {chainId && account && (
@@ -358,7 +358,7 @@ export default function AccountDetails({
                             href={chainId && getEtherscanLink(chainId, ENSName, 'address')}
                           >
                             <LinkIcon size={16} />
-                            <span style={{ marginLeft: '4px' }}>View on Etherscan</span>
+                            <span style={{ marginLeft: '4px' }}>到区块浏览器查看</span>
                           </AddressLink>
                         )}
                       </div>
@@ -395,7 +395,7 @@ export default function AccountDetails({
       {!!pendingTransactions.length || !!confirmedTransactions.length ? (
         <LowerSection>
           <AutoRow mb={'1rem'} style={{ justifyContent: 'space-between' }}>
-            <TYPE.body>Recent Transactions</TYPE.body>
+            <TYPE.body>最近的交易</TYPE.body>
             <LinkStyledButton onClick={clearAllTransactionsCallback}>(clear all)</LinkStyledButton>
           </AutoRow>
           {renderTransactions(pendingTransactions)}
@@ -403,7 +403,7 @@ export default function AccountDetails({
         </LowerSection>
       ) : (
         <LowerSection>
-          <TYPE.body color={theme.text1}>Your transactions will appear here...</TYPE.body>
+          <TYPE.body color={theme.text1}>你的交易会展示在这里...</TYPE.body>
         </LowerSection>
       )}
     </>
